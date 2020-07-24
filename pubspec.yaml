@@ -1,0 +1,90 @@
+name: tscurbing
+description: T's Curbing and Landscaping
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  cloud_firestore:
+  firebase_auth:
+  firebase_core:
+  firebase_messaging:
+  fl_chart:
+  streaming_shared_preferences:
+  responsive_builder:
+  provider:
+  auto_route:
+  flutter_staggered_animations:
+  get_it:
+  get:
+  flutter_screenutil:
+  path_provider:
+  flutter_statusbarcolor:
+  chopper:
+  animations:
+  fluid_layout:
+  logger:
+  flutter_swiper:
+  injectable:
+  simple_animations:
+  carousel_slider:
+  persistent_bottom_nav_bar:
+  flutter_appauth:
+  scheme_package:
+    path: "../scheme_package/"
+  scheme_utilities:
+    path: "../scheme_creative/lib/packages/scheme_utilities/"
+  scheme_theme:
+    path: "../scheme_creative/lib/packages/scheme_theme/"
+  scheme_icons:
+    path: "../scheme_creative/lib/packages/scheme_icons/"
+  scheme_components:
+    path: "../scheme_creative/lib/packages/scheme_components/"
+
+
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^0.1.3
+
+  google_sign_in:
+  intl: 
+  date_format: 
+  google_fonts:
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  auto_route_generator:
+  chopper_generator:
+  build_runner:
+  injectable_generator:
+
+scripts:
+  build: flutter packages pub run build_runner build
+  automate: flutter pub pub run scheme_automation
+    --build-theme
+    --build-scheme
+    --build-auth
+    --build-dialog
+    --build-admin
+    --build-user
+    --build-plugins
+    --android-sign
+
+
+
+
+flutter:
+
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - fonts/

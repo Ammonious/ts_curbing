@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "949488350724",
+    "firebase_url": "https://ts-landscaping.firebaseio.com",
+    "project_id": "ts-landscaping",
+    "storage_bucket": "ts-landscaping.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949488350724:android:160b848eb5b6e7164a6751",
+        "android_client_info": {
+          "package_name": "com.schemecreative.tscurbing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949488350724-rk4gsdl720qrjcfiu14rultqglfmbk5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjA1DJz3QZ3-W0YX1SFLoysVrlBJOGuR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949488350724-rk4gsdl720qrjcfiu14rultqglfmbk5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

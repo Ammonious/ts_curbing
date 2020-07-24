@@ -1,0 +1,81 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color run --machine --track-widget-creation --device-id=chrome lib/main.dart
+
+## exception
+
+StateError: Bad state: No context with the running Dart application.
+
+```
+#0      RemoteDebuggerExecutionContext.id (package:dwds/src/debugging/execution_context.dart:46:7)
+<asynchronous suspension>
+#1      Modules._initializeMapping (package:dwds/src/debugging/modules.dart:184:44)
+#2      Modules.initialize (package:dwds/src/debugging/modules.dart:53:5)
+#3      ChromeProxyService.createIsolate (package:dwds/src/services/chrome_proxy_service.dart:162:14)
+#4      DevHandler._handleConnectRequest (package:dwds/src/handlers/dev_handler.dart:330:41)
+#5      DevHandler._handleConnection.<anonymous closure> (package:dwds/src/handlers/dev_handler.dart:215:21)
+#6      _rootRunUnary (dart:async/zone.dart:1141:38)
+#7      _CustomZone.runUnary (dart:async/zone.dart:1034:19)
+#8      _CustomZone.runUnaryGuarded (dart:async/zone.dart:936:7)
+#9      _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:339:11)
+#10     _DelayedData.perform (dart:async/stream_impl.dart:594:14)
+#11     _StreamImplEvents.handleNext (dart:async/stream_impl.dart:710:11)
+#12     _PendingEvents.schedule.<anonymous closure> (dart:async/stream_impl.dart:670:7)
+#13     _rootRun (dart:async/zone.dart:1129:38)
+#14     _CustomZone.run (dart:async/zone.dart:1026:19)
+#15     _CustomZone.runGuarded (dart:async/zone.dart:928:7)
+#16     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:968:23)
+#17     _rootRun (dart:async/zone.dart:1133:13)
+#18     _CustomZone.run (dart:async/zone.dart:1026:19)
+#19     _CustomZone.runGuarded (dart:async/zone.dart:928:7)
+#20     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:968:23)
+#21     _microtaskLoop (dart:async/schedule_microtask.dart:43:21)
+#22     _startMicrotaskLoop (dart:async/schedule_microtask.dart:52:5)
+#23     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+#24     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:169:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel master, v1.16.2-pre.22, on Mac OS X 10.15.4 19E264b, locale en-US)
+    • Flutter version 1.16.2-pre.22 at /Users/ammonrees/Scheme Development/Flutter Projects/flutter
+    • Framework revision 74a505b195 (2 days ago), 2020-03-19 22:03:36 -0400
+    • Engine revision 046a4a6c2b
+    • Dart version 2.8.0 (build 2.8.0-dev.16.0 5b21a43c55)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.3)
+    • Android SDK at /Users/ammonrees/Library/Android/sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-29, build-tools 29.0.3
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b4-5784211)
+    • All Android licenses accepted.
+
+[✓] Xcode - develop for iOS and macOS (Xcode 11.3)
+    • Xcode at /Applications/Xcode-beta.app/Contents/Developer
+    • Xcode 11.3, Build version 11C24b
+    • CocoaPods version 1.9.1
+
+[✓] Chrome - develop for the web
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Android Studio (version 3.6)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin version 44.0.2
+    • Dart plugin version 192.7761
+    • Java version OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b4-5784211)
+
+[✓] VS Code (version 1.43.1)
+    • VS Code at /Applications/Visual Studio Code.app/Contents
+    • Flutter extension version 3.8.1
+
+[✓] Connected device (3 available)
+    • macOS      • macOS      • darwin-x64     • Mac OS X 10.15.4 19E264b
+    • Chrome     • chrome     • web-javascript • Google Chrome 80.0.3987.149
+    • Web Server • web-server • web-javascript • Flutter Tools
+
+• No issues found!
+```

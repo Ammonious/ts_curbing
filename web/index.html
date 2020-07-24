@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="T's Curbing and Landscaping">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="tscurbing">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+  <title>tscurbing</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+<script>
+     firebase.initializeApp({
+  apiKey: "AIzaSyAD0aRFZ7xP5_4AbFEpK12lwTjKjvlX5ww",
+    authDomain: "ts-landscaping.firebaseapp.com",
+    databaseURL: "https://ts-landscaping.firebaseio.com",
+    projectId: "ts-landscaping",
+    storageBucket: "ts-landscaping.appspot.com",
+    messagingSenderId: "949488350724",
+    appId: "1:949488350724:web:951a2617682e9da04a6751",
+    measurementId: "G-ZWEXXPQR4X"
+  });
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="main.dart.js?v=0.0.7" type="application/javascript"></script>
+</body>
+</html>
